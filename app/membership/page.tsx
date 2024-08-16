@@ -12,11 +12,11 @@ const membership = () => {
         {
           title: "One Time Subscription - $200",
           description: {
-            one: "Unlimited Packages",
-            two: "Access to all Equiipment in the Gym.",
-            three: "Free medical checkup",
-            four: "Personal trainer for all class session (i.e yoga dance fitness, message therapy)",
-            five: "Additional amenities (i.e private lock rooms, cafe/smoothie bar).",
+            one: "✓ Unlimited Packages",
+            two: "✓ Access to all Equiipment in the Gym.",
+            three: "✓ Free medical checkup",
+            four: "✓ Personal trainer for all class session (i.e yoga dance fitness, message therapy)",
+            five: "✓ Additional amenities (i.e private lock rooms, cafe/smoothie bar).",
           }
             ,
        // Adjust these filenames
@@ -24,18 +24,19 @@ const membership = () => {
         {
           title: "Annual Subscription - $60",
           description: {
-            one: "Access to all Equiipment in the Gym.",
-            two: "Free medical checkup",
-            three: "Personal trainer for all class session (i.e yoga dance fitness, message therapy)",
-            four: "Additional amenities (i.e private lock rooms, cafe/smoothie bar).",
+            one: "✓ Access to all Equiipment in the Gym.",
+            two: "✓ Free medical checkup",
+            three: "✓ Personal trainer for all class session (i.e yoga dance fitness, message therapy)",
+            four: "✓ Additional amenities (i.e private lock rooms, cafe/smoothie bar).",
           }
       
         },
         {
           title: "Monthly Subscription - $5",
           description: {
-            one: "Work out the latest fitness technology and machines designed to enhance your training.",
-            two: "Work out the latest fitness technology and machines designed to enhance your training."
+            one: "✓ Access to all Equiipment in the Gym.",
+            two: "✓ General locker room",
+            three: "✓ Limited access to some classes",
           }
             
       
@@ -81,8 +82,7 @@ const navigation = [
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end font-bold py-2 px-4">
-            <SignInButton />
-             →
+            
           </div>
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -146,20 +146,24 @@ const navigation = [
                     Choose your perfect membership subscription
                     </h1>
                 </div>
-                <div className="max-w-5xl mx-auto px-8 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="max-w-5xl mx-auto px-8 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:h-[450px]">
                     {projects.map((project, index) => (
                     <div
                         key={index}
-                        className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105"
+                        className="shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105 bg-limegreen"
+
                     >
                         <div className="p-6">
-                        <h3 className="text-xl font-bold border-b-2 text-gray-900 text-center">{project.title}</h3>
-                        <p className="mt-2 text-gray-600">✓ {project.description.one}</p>
-                        <p className="mt-2 text-gray-600">✓ {project.description.two}</p>
+                        <h3 className="text-xl font-bold border-b-2 text-white text-center">{project.title}</h3>
+                        <p className="mt-2 text-white">{project.description.one}</p>
+                        <p className="mt-2 text-white">{project.description.two}</p>
+                        <p className="mt-2 text-white">{project.description.three}</p>
+                        <p className="mt-2 text-white">{project.description.four}</p>
+                        <p className="mt-2 text-white">{project.description.five}</p>
                         <br />
                         <a
                             href="/form"
-                            className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                            className="mt-auto rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
                             Get started
                         </a>

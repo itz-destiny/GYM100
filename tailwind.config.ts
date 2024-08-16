@@ -15,6 +15,9 @@ const config: Config = {
       },
       fontFamily:{
         nasalization: ["var(--font-nasalization)"]
+      },
+      colors:{
+        limegreen: '#6F9907'
       }
     },
   },
