@@ -3,9 +3,9 @@ import Link from 'next/link';
 function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between lg:items-center px-5">
         <div className="flex   
- items-center mb-4 md:mb-0">
+ lg:items-center mb-4 md:mb-0">
            <img
                 alt=""
                 src="./gym 100.png"

@@ -30,7 +30,7 @@ export default function RootLayout({
 
         </SignedOut>
         <SignedIn>
-          <Dashboard />
+          {/* <Dashboard /> */}
         </SignedIn>
         {children}
         </body>

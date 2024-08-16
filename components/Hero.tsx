@@ -7,11 +7,11 @@ import { IoMdClose } from "react-icons/io";
 import { SignInButton } from "@clerk/nextjs"
 
 const navigation = [
-  { name: 'Home', href: '/Hero' },
-  { name: 'About', href: '/about' },
+  { name: 'Home', href: '/' },
+  { name: 'About', href: '#about' },
   { name: 'Membership', href: '/dashboard' },
-  { name: 'Contact', href: '#' },
-  { name: 'FAQ', href: '/Faq' },
+  { name: 'Contact', href: '#contact' },
+  { name: 'FAQ', href: '#faq' },
 ]
 
 export default function Hero() {
@@ -37,8 +37,7 @@ export default function Hero() {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
             >
               <span className="sr-only text-white">Open main menu</span>
-              <FaBars aria-hidden="true" className="h-6 w-6" />
-            </button>
+              <FaBars aria-hidden="true" className="h-6 w-6" />            </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (

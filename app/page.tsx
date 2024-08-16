@@ -1,17 +1,17 @@
 import Image from "next/image";
-import Hero from "./components/Hero";
-import About from "./components/about"
-import Whyus from "./components/Whyus"
-import Faq from "./components/Faq"
-import Footer from "./components/footer"
 import "./globals.css";
+import Hero from "../components/Hero";
+import About from "@/components/about";
+import WhyChooseUs from "@/components/Whyus";
+import Faq from "@/components/Faq";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="min-h-screen">
       <Hero />
       <About />
-      <Whyus />
+      <WhyChooseUs />
       <Faq />
       <Footer />
     </main>
