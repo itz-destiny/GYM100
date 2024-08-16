@@ -165,40 +165,9 @@ export default function Dashboard() {
         </header>
         <main>
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <div className="py-12 bg-gray-100 h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-3xl font-extrabold text-gray-900">
-          Prepare to boost your fitness journey
-        </h1>
-        <p className="mt-4 text-lg text-gray-600">
-          Discover how GYM100 can help you achieve your fitness goals <br /> 
-          Explore our membership options and join a community committed to your well being
-        </p>
-        <h1 className="text-3xl font-extrabold text-gray-900 mt-6">
-          Choose your perfect membership subscription
-        </h1>
-      </div>
-      <div className="max-w-5xl mx-auto px-8 mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105"
-          >
-            <div className="p-6">
-              <h3 className="text-xl font-bold border-b-2 text-gray-900">{project.title}</h3>
-              <p className="mt-2 text-gray-600">{project.description}</p>
-              <br />
-              <a
-                href="/form"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Get started
-              </a>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+            <h1 className="text-3xl font-extrabold text-gray-900">
+              Prepare to boost your fitness journey
+            </h1>
           </div>
         </main>
       </div>

@@ -9,7 +9,7 @@ import { SignInButton } from "@clerk/nextjs"
 const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '#about' },
-  { name: 'Membership', href: '/dashboard' },
+  { name: 'Membership', href: '/membership' },
   { name: 'Contact', href: '#contact' },
   { name: 'FAQ', href: '#faq' },
 ]
