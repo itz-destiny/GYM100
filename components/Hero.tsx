@@ -113,7 +113,7 @@ export default function Hero() {
         </div>
         <div className="mx-auto max-w-2xl py-20 sm:py-48 lg:py-36">
           <div className="text-center pt-8">
-            <h1 className="text-6xl font-bold tracking-tight text-white sm:text-6xl ">
+            <h1 className="text-7xl font-bold tracking-tight text-white sm:text-6xl ">
               STAY FIT <br /> STAY HEALTHY
             </h1>
             <div className="mt-10 flex items-center justify-center gap-x-6">

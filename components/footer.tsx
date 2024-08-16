@@ -16,28 +16,28 @@ function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">Menu</h3>
             <ul>
-              <li><Link href="/about">Home</Link></li>
-              <li><Link href="/contact">Membershipt</Link></li>
-              <li><Link href="/terms">FAQ</Link></li>
-              <li><Link href="/privacy">About</Link></li>
-              <li><Link href="/privacy">Contact</Link></li>
+              <li><Link href="#Home">Home</Link></li>
+              <li><Link href="/membership">Membershipt</Link></li>
+              <li><Link href="#faq">FAQ</Link></li>
+              <li><Link href="#about">About</Link></li>
+              <li><Link href="#">Contact</Link></li>
             </ul>   
 
           </div>
           <div>
             <h3 className="text-lg font-bold mb-4">Information</h3>
             <ul>
-              <li><Link href="/product1">Contact</Link></li>
-              <li><Link href="/product2">Order</Link></li>
-              <li><Link href="/product3">Videos</Link></li>
+              <li><Link href="#">Contact</Link></li>
+              <li><Link href="#">Order</Link></li>
+              <li><Link href="#">Videos</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-bold mb-4">Address</h3>
             <ul>
-              <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/faq">FAQ</Link></li>
-              <li><Link href="/support">Support</Link></li>
+              <li><Link href="#">Blog</Link></li>
+              <li><Link href="#">FAQ</Link></li>
+              <li><Link href="#">Support</Link></li>
             </ul>
           </div>
         </div>

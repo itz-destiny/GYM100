@@ -17,7 +17,8 @@ const config: Config = {
         nasalization: ["var(--font-nasalization)"]
       },
       colors:{
-        limegreen: '#6F9907'
+        darkolive: '#202415',
+        lemongreen: '#ABE225'
       }
     },
   },

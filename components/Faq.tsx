@@ -5,19 +5,39 @@ const Faq = () => {
   const faqs = [
     {
       question: 'Do you offer personal training services?',
-      answer: 'lorem ipsum',
+      answer: {
+        one: 'Yes, we offer personal training session with certified personal trainers who can help your fitness goal, but it all depends on your membership plan',
+        two: '',
+        three: '',
+        four: '',
+      },
     },
     {
       question: 'What are your operating hours?',
-      answer: 'Lorem Ipsum.',
+      answer: {
+        one: 'Our gym is open 24/7 to accommodate all schedules. Whether you like to hit the gym at dawn or dusk, you can work out at a time that suits you best. Our staffs are available for assistance from 6am to 10pm',
+        two: '',
+        three: '',
+        four: '',
+      },
     },
     {
       question: 'What type of membership do you offer?',
-      answer: 'Lorem ipsum',
+      answer: {
+        one: 'We offer a variety of membership options, including one-time, monthly and annual memberships.',
+        two: '',
+        three: '',
+        four: '',
+      },
     },
     {
-      question: 'What amenities does your gym offer',
-      answer: 'Lorem ipsum',
+      question: 'How to make Payment?',
+      answer: {
+        one: '→ Click on the "make payment" on the membership page',
+        two: '→ Select your prefeered exchange for payment',
+        three: '→ Copy the wallet addreess and make the payment on your crypto currency wallat or 100pay app.',
+        four: '→ After making payment come back to the website and wait for the payment to be completely processed.',
+      },
     },
   ];
 
@@ -44,7 +64,7 @@ const Faq = () => {
                 <div
                   className="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out peer-checked:max-h-40 pl-4 text-gray-600"
                 >
-                  {faq.answer}
+                  {faq.answer?.one}{faq.answer?.two}{faq.answer?.three}{faq.answer?.four}
                 </div>
               </li>
             ))}
