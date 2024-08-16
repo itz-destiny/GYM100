@@ -4,20 +4,20 @@
 const Faq = () => {
   const faqs = [
     {
-      question: 'What is Next.js?',
-      answer: 'Next.js is a React framework that enables server-side rendering and static site generation.',
+      question: 'Do you offer personal training services?',
+      answer: 'lorem ipsum',
     },
     {
-      question: 'How do I install Next.js?',
-      answer: 'You can install Next.js by running `npm install next react react-dom` in your project directory.',
+      question: 'What are your operating hours?',
+      answer: 'Lorem Ipsum.',
     },
     {
-      question: 'What is server-side rendering?',
-      answer: 'Server-side rendering is the process of rendering web pages on the server instead of in the browser.',
+      question: 'What type of membership do you offer?',
+      answer: 'Lorem ipsum',
     },
     {
-      question: 'How do I create a new Next.js page?',
-      answer: 'Create a new file in the `pages` directory with a `.js` or `.jsx` extension.',
+      question: 'What amenities does your gym offer',
+      answer: 'Lorem ipsum',
     },
   ];
 

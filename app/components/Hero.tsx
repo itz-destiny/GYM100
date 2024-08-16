@@ -4,13 +4,14 @@ import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { FaBars } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
+import { SignInButton } from "@clerk/nextjs"
 
 const navigation = [
-  { name: 'Home', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Membership', href: '#' },
+  { name: 'Home', href: '/Hero' },
+  { name: 'About', href: '/about' },
+  { name: 'Membership', href: '/dashboard' },
   { name: 'Contact', href: '#' },
-  { name: 'FAQ', href: '#' },
+  { name: 'FAQ', href: '/Faq' },
 ]
 
 export default function Hero() {
@@ -46,10 +47,9 @@ export default function Hero() {
               </a>
             ))}
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
-              Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end text-white font-bold py-2 px-4">
+            <SignInButton />
+             →
           </div>
         </nav>
         <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
@@ -87,7 +87,7 @@ export default function Hero() {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#"
+                    href="https://aware-mastodon-11.accounts.dev/sign-up"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
@@ -119,12 +119,12 @@ export default function Hero() {
             </h1>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="https://aware-mastodon-11.accounts.dev/sign-up"
                 className="rounded-md text-indigo-600 px-3.5 py-2.5 text-sm font-semibold bg-white shadow-sm hover:bg-gray-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started
               </a>
-              <a href="#" className="text-sm font-semibold leading-6 text-white">
+              <a href="https://aware-mastodon-11.accounts.dev/sign-up" className="text-sm font-semibold leading-6 text-white">
                 Learn more <span aria-hidden="true">→</span>
               </a>
             </div>
